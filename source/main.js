@@ -40,7 +40,9 @@ function performtask(){
     let randomQuoteIndex = Math.floor(Math.random()*quoteArray.length)
     document.getElementById("quote").innerHTML = quoteArray[randomQuoteIndex].quote;
     document.getElementById("author-name").innerHTML = quoteArray[randomQuoteIndex].author;
-    let randomColorIndex = Math.floor(Math.random() * 6);
+    let colorsArraylength = colors.length
+    
+    let randomColorIndex = Math.floor(Math.random() * colorsArraylength);
     document.body.style.backgroundColor = colors[randomColorIndex];
     document.getElementById("quote").style.color = colors[randomColorIndex];
     document.getElementById("author-name").style.color = colors[randomColorIndex];
